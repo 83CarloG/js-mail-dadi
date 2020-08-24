@@ -22,9 +22,30 @@ if (mailOk) {
 else {
   alert("Mail sbagliata")
 }
-// caso minimo
-//   if emailList[0] === emailUser {
-//     alert("benvenuto");
-//   } else {
-//     emailList === contol
-//   }
+
+// Generare un numero random da 1  a 6, sia per il giocatore sia per il computer
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+// Function MIX
+// Funzione per generare un numero casuale
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
+
+// Lancio i dadi
+var playerOne = getRandomInt(1, 7);
+alert("Il tuo lancio è stato di " + playerOne)
+var playerBot = getRandomInt (1, 7);
+alert("Il lancio del Bot è stato " + playerBot)
+// Esito dei dadi
+if (playerOne < playerBot) {
+  alert ("Hai perso")
+}
+else if (playerOne > playerBot) {
+  alert("Hai vinto")
+}
+else {
+  alert("Pari!")
+}
