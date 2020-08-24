@@ -43,23 +43,32 @@ function getRandomInt(min, max) {
 
 // Lancio i dadi
 let dice = document.getElementById('dice');
+// // Stabilisco il vincitore, in base a chi fa il punteggio più alto.
 
 function letDice(){
+  document.getElementById('playerBot').innerHTML  = "";
+  document.getElementById('playerOne').innerHTML  = "";
+  document.getElementById('playerBot-result').innerHTML  = "";
+  document.getElementById('playerOne-result').innerHTML  = "";
+
+
   var playerOne = getRandomInt(1, 7);
-  alert("Il tuo lancio è stato di " + playerOne)
   var playerBot = getRandomInt (1, 7);
-  alert("Il lancio del Bot è stato " + playerBot)
+
+  document.getElementById('playerBot').innerHTML = playerBot;
+  document.getElementById('playerOne').innerHTML = playerOne;
   // Esito dei dadi
   if (playerOne < playerBot) {
-    alert ("Hai perso")
+    document.getElementById('playerBot-result').innerHTML = "Win";
   }
   else if (playerOne > playerBot) {
-    alert("Hai vinto")
+    document.getElementById('playerOne-result').innerHTML = "Win";
   }
   else {
-    alert("Pari!")
+    document.getElementById('playerBot-result').innerHTML = "Pari";
+    document.getElementById('playerOne-result').innerHTML = "Pari";
   }
-  }
+}
 
 
 dice.addEventListener("click", () => letDice(), false);
