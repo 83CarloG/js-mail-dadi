@@ -9,28 +9,29 @@
     <title></title>
   </head>
   <body>
-  <main class="main">
+    <main class="main">
+      <div class="wrap">
+        <button class="btn" class="nes-btn is-primary" type="button" name="mail" id="mail">
+          <a class="nes-btn" href="#">Clicca qui per inserire la tua mail</a>
+        </button>
+        <button class="btn" type="button" name="mail" id="dice">
+          <a class="nes-btn" href="#">Clicca qui per lanciare i dadi</a>
 
-    <button class="btn" class="nes-btn is-primary" type="button" name="mail" id="mail">
-      <a class="nes-btn" href="#">Clicca qui per inserire la tua mail</a>
-    </button>
-    <button class="btn" type="button" name="mail" id="dice">
-      <a class="nes-btn" href="#">Clicca qui per lanciare i dadi</a>
-
-    </button>
-    <div class="points">
-      <div class="nes-container with-title is-centered points__box">
-        <p class="title">Tu</p>
-        <p id="playerOne"></p>
-        <p id="playerOne-result"></p>
+        </button>
+        <div class="points">
+          <div class="nes-container with-title is-centered points__box">
+            <p class="title">Tu</p>
+            <p id="playerOne"></p>
+            <p id="playerOne-result"></p>
+          </div>
+          <div class="nes-container with-title is-centered points__box">
+            <p class="title">Bot</p>
+            <p id="playerBot"></p>
+            <p id="playerBot-result"></p>
+          </div>
+        </div>
       </div>
-      <div class="nes-container with-title is-centered points__box">
-        <p class="title">Bot</p>
-        <p id="playerBot"></p>
-        <p id="playerBot-result"></p>
-      </div>
-    </div>
-  </main>
+    </main>
   <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

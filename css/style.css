@@ -10,11 +10,21 @@
   height: 100vh;
   background-color: #4b0082;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  width: 400px;
+  max-height: 800px;;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0px 20px;
+  border-radius: 20px;
+  background-color: #4b0082;
+  border: 10px solid #fff;
 }
-
 .btn {
   width: 280px;
   height: 75px;

@@ -72,3 +72,15 @@ function letDice(){
 
 
 dice.addEventListener("click", () => letDice(), false);
+
+
+const strings = ["carlo", "pippo", "angelo"];
+
+const defaultSort = Array.from(strings).sort();
+
+const simpleSort = Array.from(strings).sort((a, b) => a - b);
+
+
+
+console.log(defaultSort);
+console.log(simpleSort);
